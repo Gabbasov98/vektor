@@ -4,6 +4,7 @@
   &__inner{
     padding: 69px 50px 44px;
     background-color: $bg;
+    border-radius: 3px;
   }
   &__title{
     color: #02459D;
@@ -63,6 +64,7 @@
       margin-top: 10px;
     }
   }
+
   .props{
     margin-top: 30px;
     &__title{
@@ -72,8 +74,8 @@
       margin-top: 10px;
     }
     &__table{
-      width: calc(100% + 40px);
-      margin-left: -20px;
+      width: calc(100% + 38px);
+      margin-left: -19px;
     }
   }
 }

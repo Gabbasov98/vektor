@@ -76,7 +76,6 @@
     &-title{
       font-weight: 700;
       margin-top: 10px;
-      max-width: 210px;
     }
   }
   &__icon{
@@ -343,6 +342,9 @@
     &__form{
       grid-template-columns: 100%;
       gap: 20px;
+    }
+    &__btn{
+      width: 100%;
     }
   }
 }

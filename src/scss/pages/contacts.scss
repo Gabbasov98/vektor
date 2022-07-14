@@ -1,6 +1,7 @@
 @import "../vars";
 .consult--contacts{
   margin-top: -55px;
+  padding: 70px 0 85px;
 }
 
 .map{
@@ -11,6 +12,7 @@
 @media screen and (max-width: 576px){
   .consult--contacts{
     margin-top: -28px;
+    padding: 35px 0 45px;
   }
   .map{
     height: 500px;

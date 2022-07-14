@@ -4,6 +4,8 @@
   color: #fff;
   display: flex;
   flex-direction: column;
+  border-radius: 3px;
+  overflow: hidden;
   &__img{
     flex-shrink: 0;
     height: 360px;
@@ -38,7 +40,10 @@
       height: 230px;
     }
     &__content{
-      padding: 23px 23px 29px 20px;
+      padding: 23px 23px 25px 20px;
+    }
+    &__title{
+      max-width: 200px;
     }
     &__desc{
       margin-top: 11px;
