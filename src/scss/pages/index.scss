@@ -252,6 +252,9 @@
 
   .catalog{
     padding: 38px 0 20px;
+    &__title{
+      max-width: 280px;
+    }
     &__desc{
       margin-top: 15px;
     }
