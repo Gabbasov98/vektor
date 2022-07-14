@@ -126,6 +126,7 @@
     }
     &__inner{
       justify-content: flex-end;
+      position: relative;
     }
     &__logo{
       margin-right: auto;
@@ -150,7 +151,10 @@
       align-items: center;
       width: 25px;
       height: 16px;
-      position: relative;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
       span {
         border-radius: 8px;
         height: 2px;
@@ -172,8 +176,10 @@
       }
     }
     &__call{
-      margin-right: 22px;
-      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 47px;
+      position: absolute;
       z-index: 15;
       display: block;
     }
