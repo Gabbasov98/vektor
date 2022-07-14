@@ -23,6 +23,10 @@ window.onresize = () => {
 }
 
 function setMainContainerWidth() {
-    let containerWidth = document.querySelector(".header .container").offsetWidth;
-    document.querySelector(".main__inner").style.width = `${containerWidth / 2}px`
+    let container = document.querySelector(".header .container")
+    let containerWidth = container.offsetWidth
+    let mainInner = document.querySelector(".main__inner")
+    if(mainInner){
+        mainInner.style.width = `${containerWidth / 2}px`
+    }
 }

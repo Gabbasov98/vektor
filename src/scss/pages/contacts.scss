@@ -5,9 +5,23 @@
 }
 
 .map{
-  height: 600px;
+  &__block{
+    height: 600px;
+  }
 }
 
+@media screen and (max-width: 992px){
+  .map{
+    &__block{
+      pointer-events: none;
+    }
+    &--active{
+      .map__block{
+        pointer-events: unset;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 576px){
   .consult--contacts{
@@ -15,6 +29,8 @@
     padding: 35px 0 45px;
   }
   .map{
-    height: 500px;
+    &__block{
+      height: 500px;
+    }
   }
 }
