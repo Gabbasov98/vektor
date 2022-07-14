@@ -1,0 +1,124 @@
+@import "../vars";
+.footer{
+  padding: 56px 0;
+  border-top: $border;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__links{
+    display: flex;
+  }
+  &__link{
+    margin-right: 80px;
+    font-size: 16px;
+    line-height: 125%;
+    font-weight: 600;
+    &--active{
+      font-weight: 700;
+      color: $primary;
+    }
+  }
+  &__contacts{
+    display: block;
+    flex-shrink: 0;
+    margin-left: 20px;
+    min-width: 207px;
+    &-title{
+      font-size: 16px;
+      line-height: 185%;
+      color: $gray;
+    }
+    &-phone{
+      font-size: 22px;
+      line-height: 118%;
+      font-weight: 500;
+      color: #02459D;
+    }
+  }
+  &__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  &__copyright,
+  &__by{
+    font-size: 14px;
+    line-height: 135%;
+    color: $gray;
+  }
+  &__by{
+    min-width: 207px;
+    a{
+      color: #02459D;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .footer{
+    &__link{
+      margin-right: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .footer{
+    padding: 40px 0 47px;
+    &__links{
+      display: block;
+    }
+    &__link{
+      font-size: 12px;
+      line-height:100%;
+      display: block;
+      margin: 0 0 18px;
+      br{
+        display: none;
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    &__contacts{
+      min-width: 180px;
+      &-title{
+        font-size: 12px;
+        line-height: 21px;
+      }
+      &-phone{
+        font-size: 16px;
+        line-height: 21px;
+      }
+    }
+    &__bottom{
+      margin-top: 30px;
+    }
+    &__copyright,
+    &__by{
+      font-size: 12px;
+      line-height: 17px;
+    }
+    &__by{
+      min-width: 180px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .footer{
+    &__bottom{
+      display: block;
+    }
+    &__by{
+      margin-top: 8px;
+      min-width: unset;
+    }
+    &__contacts{
+      min-width: unset;
+    }
+  }
+}

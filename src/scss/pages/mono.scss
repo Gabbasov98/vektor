@@ -1,0 +1,72 @@
+@import "../vars";
+.function{
+  margin: 70px 0 35px;
+  &__inner{
+    padding: 69px 50px 44px;
+    background-color: $bg;
+  }
+  &__title{
+    color: #02459D;
+  }
+  &__wrap{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 26px));
+    gap: 30px 52px;
+  }
+  &__subtitle{
+    font-weight: 700;
+  }
+  &__desc{
+    margin-top: 15px;
+    .mlist,
+    p{
+      &:not(:last-child){
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.props{
+  margin-top: 35px;
+  &__title{
+    margin-bottom: 25px;
+  }
+  &__table{
+    tr{
+      &:nth-child(even){
+        background-color: #fff;
+      }
+    }
+  }
+  &__hint{
+    margin-top: 25px;
+    color: $gray;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .function{
+    margin: 30px 0 20px;
+    &__inner{
+      padding: 38px 20px;
+    }
+    &__wrap{
+      grid-template-columns: 100%;
+      margin-top: 25px;
+    }
+    &__desc{
+      margin-top: 10px;
+    }
+  }
+  .props{
+    margin-top: 30px;
+    &__title{
+      margin-bottom: 16px;
+    }
+    &__hint{
+      margin-top: 10px;
+    }
+  }
+}

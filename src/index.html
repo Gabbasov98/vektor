@@ -1,0 +1,116 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html',{"index":"true"})
+        <main class="content">
+
+            <section class="main">
+                <div class="main__content">
+                    <div class="main__inner">
+                        <h1 class="main__title">BMU</h1>
+                        <div class="main__subtitle">Системы обслуживания фасадов</div>
+                        <div class="main__desc">Обеспечивают безопасный доступ обслуживающего персонала к наружной стороне здания. Стационарные системы обслуживания устанавливаются на фасадах любой геометрии.</div>
+                    </div>
+                </div>
+                <div class="main__slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/main-bg.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/main-bg.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="catalog">
+                <div class="container">
+                    <div class="catalog__inner">
+                        <div class="catalog__info">
+                            <div class="catalog__title display2">Новинка со сроком окупаемости – 3,5 года </div>
+                            <div class="catalog__desc body-text font2">
+                                <p>СОФ предназначены для вентилируемых и стеклянных фасадов. В России это новинка, хотя в Европе такие системы установлены на всех зданиях высотой от 18 метров.</p>
+                                <p>Срок службы: 30+ лет. На протяжении которых не будет дополнительных расходов на аренду автовышек, привлечение промышленных альпинистов и др. При выборе подходящей системы учитываются архитектурные особенности здания и рекомендации производителя.</p>
+                            </div>
+                            <div class="catalog__items font2">
+                                <div class="catalog__item">
+                                    <div class="catalog__icon">
+                                        <img src="img/catalog-icon.svg" alt="">
+                                    </div>
+                                    <div class="catalog__item-title body-text">Ремонт и техническое обслуживание фасадов</div>
+                                </div>
+                                <div class="catalog__item">
+                                    <div class="catalog__icon">
+                                        <img src="img/catalog-icon2.svg" alt="">
+                                    </div>
+                                    <div class="catalog__item-title body-text">Быстрая замена фасадного остекления</div>
+                                </div>
+                                <div class="catalog__item">
+                                    <div class="catalog__icon">
+                                        <img src="img/catalog-icon3.svg" alt="">
+                                    </div>
+                                    <div class="catalog__item-title body-text">Удобная мойка фасадов из любых материалов</div>
+                                </div>
+                                <div class="catalog__item">
+                                    <div class="catalog__icon">
+                                        <img src="img/catalog-icon4.svg" alt="">
+                                    </div>
+                                    <div class="catalog__item-title body-text">Обслуживание фасадного освещения</div>
+                                </div>
+                            </div>
+                        </div>
+                        @@include('components/cards/_catalog-card.html',{"img":"catalog","title":"Фасадный  подъемник","desc":"Оптимальная система обслуживания объектов с плоской крышей. Представляет собой компактную крановую установку, которая перемещается по двойным рельсовым путям или бетонной колее."})
+                        @@include('components/cards/_catalog-card.html',{"img":"catalog2","title":"Монорельсовая система","desc":"СОФ для зданий высотой до 80 метров и кровлей любого типа (например, многоуровневой). Система состоит из специальной платформы и рельсовых путей, закрепленных вдоль фасада. "})
+                        @@include('components/cards/_catalog-card.html',{"img":"catalog3","title":"Атриумная лестница","desc":"Система обслуживания для выполнения внешних и внутренних работ. Разрабатывается под заказ с учетом особенностей здания. Представляет собой лестницу, платформу, портал или мостик. "})
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="container">
+                    <div class="about__title display2">О компании</div>
+                    <div class="about__text body-text font2">
+                        <p>Компания «Рентал инжиниринг» представляет строительное подъемное оборудование и системы обслуживания фасадов VECTOR на территории России и стран Таможенного союза.</p>
+                        <p>Имея многолетний опыт эксплуатации строительного подъемного оборудования всех производителей такого оборудования, мы предъявляем высокие требования для достижения качества и безопасности в производстве нашего оборудования.</p>
+                        <p>Системы обслуживания фасадов VECTOR предназначены для обслуживания и обеспечения доступа к фасадам здания для чистки, мойки, проведения работ по ремонту, сервисному обслуживанию фасадов здания. Такое оборудование позволяет успешно обслуживать здания в любое время года. Команда VECTOR придерживается концепции развития непрерывных инноваций и стремления к совершенству, и будет продолжать прилагать усилия в области систем обслуживания фасадов.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="consult">
+                @@include('components/page-blocks/_consult.html')
+            </section>
+
+            <section class="site">
+                <div class="container">
+                    <div class="site__title display2">Сайты компании</div>
+                    <div class="site__items">
+                        <div class="site__item">
+                            <div class="site__subtitle display3">Компания Рентал Инжиниринг</div>
+                            <div class="site__desc font2 body-text">Аренда и продажа мачтовых <br> и грузопассажирских подъемников</div>
+                            <a href="" class="site__link font2 body-text">Перейти на сайт</a>
+                        </div>
+                        <div class="site__item">
+                            <div class="site__subtitle display3">Грузопассажирский подъемник VECTOR SC 200 </div>
+                            <a href="" class="site__link font2 body-text">Перейти на сайт</a>
+                        </div>
+                        <div class="site__item">
+                            <div class="site__subtitle display3">Грузопассажирские подъемники VECTOR SE</div>
+                            <a href="" class="site__link font2 body-text">Перейти на сайт</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('components/page-blocks/_footer.html')
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+@import "../vars";
+.consult--contacts{
+  margin-top: -55px;
+}
+
+.map{
+  height: 600px;
+}
+
+
+@media screen and (max-width: 576px){
+  .consult--contacts{
+    margin-top: -28px;
+  }
+  .map{
+    height: 500px;
+  }
+}

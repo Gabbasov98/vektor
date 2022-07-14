@@ -1,0 +1,244 @@
+@import "../vars";
+.header{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 35px 0;
+  border-bottom: $border;
+  overflow: hidden;
+  z-index: 10;
+  &--contacts{
+    border: none;
+  }
+  &--index{
+    border: none;
+    color: #fff;
+    .header{
+      &__logo{
+        .manipulate-path{
+          fill:#fff;
+        }
+      }
+      &__burger {
+        span {
+          background-color: #fff;
+        }
+      }
+      &__call{
+        path{
+          fill:#fff;
+        }
+      }
+    }
+    .nav{
+      &__link{
+        &--active,
+        &:hover{
+          color: #fff;
+        }
+      }
+    }
+  }
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo{
+    width: 240px;
+    display: block;
+    flex-shrink: 0;
+    svg{
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__contacts,
+  &__call,
+  &__burger{
+    display: none;
+  }
+}
+
+.nav{
+  display: flex;
+  &__link{
+    margin-left: 80px;
+    font-size: 16px;
+    line-height: 125%;
+    font-weight: 600;
+    &--active{
+      font-weight: 700;
+      color: $primary;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1100px){
+  .nav{
+    &__link{
+      margin-left: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .header{
+    &--active{
+      color: #fff;
+      .header{
+        &__logo{
+          .manipulate-path{
+            fill:#fff;
+          }
+        }
+        &__burger {
+          span {
+            background-color: #fff;
+            &:nth-child(1) {
+              width: 100%;
+              transform: translateY(7px) rotate(-45deg);
+            }
+            &:nth-child(2) {
+              transform: scale(0);
+            }
+            &:nth-child(3) {
+              width: 100%;
+              transform: translateY(-7px) rotate(45deg);
+            }
+          }
+          &~.menu {
+            opacity: 1;
+            pointer-events: unset;
+          }
+        }
+        &__call{
+          path{
+            fill:#fff;
+          }
+        }
+        &__mob{
+          left: 0;
+        }
+      }
+    }
+    &__inner{
+      justify-content: flex-end;
+    }
+    &__logo{
+      margin-right: auto;
+      position: relative;
+      z-index: 15;
+    }
+    &__mob{
+      position: fixed;
+      left: -200%;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      overflow-y: auto;
+      background-color: $primary;
+      transition: all .225s;
+      padding: 160px 20px 70px;
+      z-index: 14;
+    }
+    &__burger {
+      z-index: 15;
+      display: flex;
+      align-items: center;
+      width: 25px;
+      height: 16px;
+      position: relative;
+      span {
+        border-radius: 8px;
+        height: 2px;
+        width: 100%;
+        display: block;
+        background-color: $black;
+        transition: all .225s;
+        &:nth-child(1) {
+          position: absolute;
+          top: 0;
+          width: 50%;
+        }
+        &:nth-child(3) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 50%;
+        }
+      }
+    }
+    &__call{
+      margin-right: 22px;
+      position: relative;
+      z-index: 15;
+      display: block;
+    }
+    &__contacts{
+      display: block;
+      margin-top: 33px;
+      color: #9CC0F7;
+      &-title{
+        font-size: 16px;
+        line-height: 185%;
+      }
+      &-phone{
+        font-size: 22px;
+        line-height: 118%;
+        font-weight: 500;
+        &:hover{
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .nav{
+    display: block;
+    &__link{
+      margin: 0 0 12px;
+      display: block;
+      padding: 7px 0;
+      font-size: 18px;
+      line-height: 20px;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: -20px;
+        top: 0;
+        width: calc(100% + 40px);
+        height: 100%;
+        background: #084AA2;
+        opacity: 0;
+      }
+      br{
+        display: none;
+      }
+      &:hover,
+      &--active{
+        color: #fff;
+        font-weight: 600;
+        &::before{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px){
+  .header{
+    padding: 20px 0;
+    &__logo{
+      width: 142px;
+    }
+    &__mob{
+      padding-top: 118px;
+    }
+  }
+}
